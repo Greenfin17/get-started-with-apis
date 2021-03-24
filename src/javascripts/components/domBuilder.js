@@ -2,8 +2,8 @@
 
 const domBuilder = () => {
   document.querySelector('#app').innerHTML = `
-  <header></header>
-  <main>test</main>`;
+  <header class="api-header"></header>
+  <main class="api-main"></main>`;
 };
 
 export default domBuilder;
