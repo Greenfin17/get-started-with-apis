@@ -1,12 +1,13 @@
 // jokeCards.js
+import jokegen from '../../../assets/jokegen.png';
 
 const jokeGenerator = () => {
   document.querySelector('main').innerHTML = `
   <div class="jokes">
-    <div class="card" style="width: 18rem;">
+    <div class="card">
+      <img src="${jokegen}" class="card-img-top" alt="Joke Generator">
       <div class="card-body">
-        <h5 class="card-title">Joke Generator</h5>
-        <a href="#" class="btn btn-primary" id="get-joke">GET A JOKE</a>
+        <a href="#" class="btn btn-dark" id="get-joke">GET A JOKE</a>
       </div>
     </div>
   </div>`;
@@ -15,10 +16,12 @@ const jokeGenerator = () => {
 const jokeSetup = (joke) => {
   document.querySelector('main').innerHTML = `
   <div class="jokes">
-    <div class="card" style="width: 18rem;">
+    <div class="card">
+      <img src="${jokegen}" class="card-img-top" alt="Joke Generator">
       <div class="card-body">
-        <p class="card-text">${joke.setup}</p>
-        <a href="#" class="btn btn-primary" id="get-punchline">GET PUNCHLINE</a>
+        <p class="card-text setup">${joke.setup}</p>
+        <p class="card-text punchline"></p>
+        <a href="#" class="btn btn-dark" id="get-punchline">GET PUNCHLINE</a>
       </div>
     </div>
   </div>`;
@@ -27,12 +30,12 @@ const jokeSetup = (joke) => {
 const jokePunchLine = (joke) => {
   document.querySelector('main').innerHTML = `
   <div class="jokes">
-    <div class="card" style="width: 18rem;">
+    <div class="card">
+      <img src="${jokegen}" class="card-img-top" alt="Joke Generator">
       <div class="card-body">
-        <h5 class="card-title">${joke.type}</h5>
-        <p class="card-text">${joke.setup}</p>
-        <p class="card-text">${joke.punchline}</p>
-        <a href="#" class="btn btn-primary" id="get-new-joke">GET A NEW JOKE</a>
+        <p class="card-text setup">${joke.setup}</p>
+        <p class="card-text punchline">${joke.punchline}</p>
+        <a href="#" class="btn btn-dark" id="get-new-joke">GET A NEW JOKE</a>
       </div>
     </div>
   </div>`;
@@ -41,6 +44,7 @@ const jokeError = () => {
   document.querySelector('main').innerHTML = `
     <div class="jokes">
       <div class="card" style="width: 18rem;">
+        <img src="${jokegen}" class="card-img-top" alt="Joke Generator">
         <div class="card-body">
           <h5 class="card-title">Error getting joke</h5>
           <a href="#" class="btn btn-primary" id="get-joke">Get a Joke</a>

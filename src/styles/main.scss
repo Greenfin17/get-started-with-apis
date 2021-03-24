@@ -2,8 +2,34 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: black;
+  color: black;
   text-align: center;
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #474747;
+  color: white;
+  width: 400px;
+  height: 400px;
+  radius: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1.2em;
+}
+
+.card-body .btn-dark {
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.card-body .punchline {
+  height: 80px;
 }
