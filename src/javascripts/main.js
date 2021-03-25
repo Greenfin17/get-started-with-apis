@@ -5,7 +5,6 @@ import '../styles/main.scss';
 import startApp from './helpers/views/startApp';
 
 const init = () => {
-  console.warn('init');
   startApp();
 };
 

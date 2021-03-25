@@ -1,14 +1,17 @@
 // startApp.js
 
 import domBuilder from '../../components/domBuilder';
+import navBar from '../../components/navbar';
 import domEvents from '../events/domEvents';
-import jokesPage from './jokesPage';
-// import jokesPage from './jokesPage';
+import navEvents from '../events/navEvents';
+import homePage from './homePage';
 
 const startApp = () => {
   domBuilder();
+  navBar();
+  navEvents();
   domEvents();
-  jokesPage();
+  homePage();
 };
 
 export default startApp;

@@ -1,4 +1,4 @@
-// jokes.js
+// jokesData.js
 
 import axios from 'axios';
 
@@ -10,10 +10,7 @@ const storeJoke = (joke) => {
   storedJoke = joke;
 };
 
-const getStoredJoke = () => {
-  console.warn(`in getStoredJoke: ${storedJoke}`);
-  return storedJoke;
-};
+const getStoredJoke = () => storedJoke;
 
 const getJoke = () => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}`).then((response) => {
