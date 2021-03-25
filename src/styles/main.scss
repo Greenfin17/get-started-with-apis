@@ -1,11 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
-body {
+body.jokes {
   background-color: black;
   color: black;
+}
+
+body.lyrics, body.home {
+  background-color: white;
+  color: black;
+}
+
+div.jokes, div.lyrics {
   text-align: center;
-  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -18,9 +25,18 @@ body {
   radius: 20px;
 }
 
+h1 {
+  margin: 20px 0 50px;
+  text-align: center;
+  color: black;
+}
+
 h1.jokes {
-  margin: 0 0 50px;
   color: white;
+}
+
+.homepage-container p {
+  text-align: center;
 }
 
 .card-body {
@@ -37,4 +53,13 @@ h1.jokes {
 
 .card-body .punchline {
   height: 80px;
+}
+
+div.lyrics-container {
+  width: 30em;
+  margin: 20px auto;
+}
+
+.song-lyrics {
+  white-space: pre-line;
 }

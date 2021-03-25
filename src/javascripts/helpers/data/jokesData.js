@@ -1,4 +1,4 @@
-// jokes.js
+// jokesData.js
 
 import axios from 'axios';
 

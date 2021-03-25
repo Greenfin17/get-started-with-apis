@@ -1,5 +1,6 @@
 // showJokes.js
-import getJoke from '../helpers/data/jokes';
+
+import getJoke from '../helpers/data/jokesData';
 import { jokeCard } from './cards/jokeCards';
 
 const showJokes = () => {
