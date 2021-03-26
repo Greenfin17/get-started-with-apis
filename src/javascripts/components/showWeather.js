@@ -1,6 +1,6 @@
 // showWeather.js
 
-import weatherCard from './cards/weatherCard';
+import { weatherCard } from './cards/weatherCard';
 
 const showWeather = (weatherObj) => {
   weatherCard(weatherObj);
