@@ -3,6 +3,7 @@
 import homePage from '../views/homePage';
 import jokesPage from '../views/jokesPage';
 import lyricsPage from '../views/lyricsPage';
+import weatherPage from '../views/weatherPage';
 
 const navEventsListener = (e) => {
   if (e.target.id === 'api-home') {
@@ -13,6 +14,9 @@ const navEventsListener = (e) => {
   }
   if (e.target.id === 'lyrics-link') {
     lyricsPage();
+  }
+  if (e.target.id === 'weather-link') {
+    weatherPage();
   }
 };
 

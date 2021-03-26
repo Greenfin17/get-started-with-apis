@@ -4,7 +4,7 @@ const lyricsForm = () => {
   document.querySelector('.lyrics-form-container').innerHTML = `
     <div class="lyrics">
       <form class="lyrics-form" style="width: 25em;">
-      <div class="form-label"><h5>Song Lyric Search Form</h5></div>
+      <div class="form-label"><h5>Search Lyrics</h5></div>
         <div class="form-group">
           <label for="artist">Artist</label>
           <input type="text" class="form-control" id="artist">

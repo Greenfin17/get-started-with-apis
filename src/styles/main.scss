@@ -11,10 +11,17 @@ body.lyrics, body.home {
   color: black;
 }
 
-div.jokes, div.lyrics {
-  text-align: center;
+div.jokes, div.lyrics, div.weather-form-container {
   display: flex;
   justify-content: center;
+}
+
+div.jokes, div.lyrics {
+  text-align: center;
+}
+
+div.weather-form-container {
+  text-align: left;
 }
 
 .card {
@@ -62,4 +69,21 @@ div.lyrics-container {
 
 .song-lyrics {
   white-space: pre-line;
+}
+
+.weather-container {
+  height: 300px;
+  display: flex;
+  flex-wrap: flex;
+  justify-content: space-around;
+}
+
+.weather-card {
+  height: 200px;
+  text-align: center;
+}
+
+.weather-card img {
+  height: 100px;
+  object-fit: contain;
 }
