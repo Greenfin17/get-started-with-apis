@@ -4,7 +4,7 @@ import selectState from './selectState';
 
 const weatherForm = () => {
   document.querySelector('.weather-form-container').innerHTML = `
-    <form  style="width: 25em;">
+    <form style="width: 25em;">
       <div class="form-group">
         <label for="inputCity">City</label>
         <input type="text" class="form-control" id="input-city">

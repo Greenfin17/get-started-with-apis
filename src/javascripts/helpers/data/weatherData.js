@@ -17,9 +17,8 @@ const getWeather = (locationObj) => new Promise((resolve, reject) => {
 });
 
 const storeLocation = (locationObj) => {
-  locationArr.unshift(locationObj);
-  if (locationArr.length > 3) {
-    locationArr.pop();
+  if (!locationArr.find((location) => locationObj.city === location.city)) {
+    locationArr.unshift(locationObj);
   }
 };
 

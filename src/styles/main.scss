@@ -72,18 +72,22 @@ div.lyrics-container {
 }
 
 .weather-container {
-  height: 300px;
   display: flex;
-  flex-wrap: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .weather-card {
   height: 200px;
   text-align: center;
+  margin: 10px 5px;
 }
 
 .weather-card img {
   height: 100px;
   object-fit: contain;
+}
+
+.weather-form-container form {
+  margin: 20px 0;
 }

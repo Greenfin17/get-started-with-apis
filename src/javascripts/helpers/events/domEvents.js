@@ -34,24 +34,30 @@ const jokeEvents = (e) => {
     getLyrics(songObj).then((lyrics) => showLyrics(songObj, lyrics));
   }
   if (e.target.id === 'btn-submit-location') {
-    const city = document.querySelector('#input-city').value;
-    const state = document.querySelector('#input-state').value;
-    const zip = document.querySelector('#input-zip').value;
-    const locationObj = {
-      city,
-      state,
-      zip
-    };
-    storeLocation(locationObj);
-    const locations = retrieveLocations();
-    console.warn(locations);
-    clearWeatherCards();
-    locations.forEach((location) => {
-      getWeather(location).then((report) => weatherCard(report));
-    });
+    const form = document.getElementByClasssName('needs-validation');
+    if (form.checkValidity() === false) {
+      e.preventDefault();
+      e.stopPropagation();
+    } else {
+      const city = document.querySelector('#input-city').value;
+      const state = document.querySelector('#input-state').value;
+      const zip = document.querySelector('#input-zip').value;
+      const locationObj = {
+        city,
+        state,
+        zip
+      };
+      form.classList.add('was-validated');
+      storeLocation(locationObj);
+      const locations = retrieveLocations();
+      console.warn(locations);
+      clearWeatherCards();
+      locations.forEach((location) => {
+        getWeather(location).then((report) => weatherCard(report));
+      });
+    }
   }
 };
 
 const domEvents = () => document.querySelector('body').addEventListener('click', jokeEvents);
-
 export default domEvents;
