@@ -1,4 +1,6 @@
 const firebaseConfig = {
+  weatherApiKey: process.env.APP_WEATHER_API_KEY,
+  theOneApiKey: process.env.APP_THE_ONE_API_KEY,
   apiKey: process.env.APP_API_KEY,
   authDomain: process.env.APP_AUTH_DOMAIN,
   databaseURL: process.env.APP_DATABASE_URL,

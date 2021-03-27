@@ -4,7 +4,7 @@ import axios from 'axios';
 import firebaseConfig from '../apiKeys';
 
 const dbUrl = 'https://api.openweathermap.org/data/2.5';
-const apid = firebaseConfig.apiKey;
+const apid = firebaseConfig.weatherApiKey;
 
 const locationArr = [];
 
