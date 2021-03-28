@@ -7,6 +7,7 @@ import getLyrics from '../data/lyricsData';
 import { getWeather, retrieveLocations, storeLocation } from '../data/weatherData';
 // import showWeather from '../../components/showWeather';
 import { weatherCard, clearWeatherCards } from '../../components/cards/weatherCard';
+import characterHandler from './handlers/characterHandler';
 
 const jokeEvents = (e) => {
   if (e.target.id === 'get-joke'
@@ -52,6 +53,15 @@ const jokeEvents = (e) => {
         getWeather(location).then((report) => weatherCard(report));
       });
     }
+  }
+  if (e.target.id === 'characters-link') {
+    characterHandler();
+  }
+  if (e.target.id === 'movies-link') {
+    console.warn('movies');
+  }
+  if (e.target.id === 'books-link') {
+    console.warn('books');
   }
 };
 

@@ -8,7 +8,7 @@ const weatherPage = () => {
   document.querySelector('main').innerHTML = '';
   document.querySelector('.title-container').innerHTML = '<h1 class="weather">Weather</h1>';
   document.querySelector('main').innerHTML = `<div class="weather-container"></div>
-    <div class="weather-form-container"></div>`;
+    <div class="weather-form-container d-flex flex-wrap align-items-center justify-content-around"></div>`;
   weatherForm();
 };
 

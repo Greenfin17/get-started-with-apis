@@ -29,7 +29,8 @@ div.weather-form-container {
   color: white;
   width: 400px;
   height: 400px;
-  radius: 20px;
+  border-radius: 20px;
+  margin: 10px 5px;
 }
 
 h1 {
@@ -40,6 +41,10 @@ h1 {
 
 h1.jokes {
   color: white;
+}
+
+h1.lord {
+  margin: 5px 0;
 }
 
 .homepage-container p {
@@ -90,4 +95,17 @@ div.lyrics-container {
 
 .weather-form-container form {
   margin: 20px 0;
+}
+
+#lord-nav ul{
+  flex-direction: row;
+  text-align: center;
+}
+
+#lord-nav li {
+  margin: 0 10px;
+}
+
+.character-card {
+  height: 200px;
 }
