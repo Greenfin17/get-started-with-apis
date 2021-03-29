@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import './cards/index';
 
 body.jokes {
   background-color: black;
@@ -24,15 +25,6 @@ div.weather-form-container {
   text-align: left;
 }
 
-.card {
-  background-color: #474747;
-  color: white;
-  width: 400px;
-  height: 400px;
-  border-radius: 20px;
-  margin: 10px 5px;
-}
-
 h1 {
   margin: 20px 0 50px;
   text-align: center;
@@ -51,22 +43,6 @@ h1.lord {
   text-align: center;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  font-size: 1.3em;
-}
-
-.card-body .btn-dark {
-  background-color: black;
-  margin-bottom: 40px;
-}
-
-.card-body .punchline {
-  height: 80px;
-}
-
 div.lyrics-container {
   width: 30em;
   margin: 20px auto;
@@ -82,17 +58,6 @@ div.lyrics-container {
   justify-content: space-around;
 }
 
-.weather-card {
-  height: 200px;
-  text-align: center;
-  margin: 10px 5px;
-}
-
-.weather-card img {
-  height: 100px;
-  object-fit: contain;
-}
-
 .weather-form-container form {
   margin: 20px 0;
 }
@@ -104,8 +69,4 @@ div.lyrics-container {
 
 #lord-nav li {
   margin: 0 10px;
-}
-
-.character-card {
-  height: 200px;
 }

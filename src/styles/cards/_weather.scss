@@ -1,0 +1,12 @@
+// cards/weather.scss
+
+.weather-card {
+  height: 200px;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.weather-card img {
+  height: 100px;
+  object-fit: contain;
+}

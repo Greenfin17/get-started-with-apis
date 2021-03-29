@@ -63,6 +63,11 @@ const jokeEvents = (e) => {
   if (e.target.id === 'books-link') {
     console.warn('books');
   }
+  if (e.target.classList.contains('character-card-title')
+    || e.target.classList.contains('card__face--front')) {
+    console.warn('found target');
+    document.querySelector('.character-card').classList.add('is-flipped');
+  }
 };
 
 const domEvents = () => document.querySelector('body').addEventListener('click', jokeEvents);
